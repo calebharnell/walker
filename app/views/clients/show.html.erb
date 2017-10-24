@@ -20,5 +20,12 @@
   <%= @client.dog_dob %>
 </p>
 
+
+<p>
+  <strong>Dog Age:</strong>
+<%= AgeCalculator.new(@client.dog_dob).age %>
+</p>
+
+
 <%= link_to 'Edit', edit_client_path(@client) %> |
 <%= link_to 'Back', clients_path %>
